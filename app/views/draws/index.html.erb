@@ -18,8 +18,8 @@
   <% if draw.image.attached? %>
     <img src="<%=(url_for(draw.image))%>" class="card-img-top" alt="...">
   <% end %> 
-  <div class="card-body">
-    <h5 class="card-title">Tools</h5>
+  <div class="card-body"> 
+    <h5 class="card-title">Tools</h5> 
     <p class="card-text"><%= draw.tools %></p>
     <h5 class="card-title">Description</h5>
     <p class="card-text"><%= draw.description %></p>
@@ -28,7 +28,7 @@
     <%= link_to 'Destroy', draw, method: :delete, data: { confirm: 'Are you sure?' } %>
   </div>
 </div>  
-    <% end %>
+    <% end %> 
     </td> 
   </tr> 
   </tbody>
