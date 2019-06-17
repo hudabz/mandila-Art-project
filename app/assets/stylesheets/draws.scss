@@ -1,0 +1,101 @@
+// Place all the styles related to the Draws controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.head {
+    position: relative;
+    background-color: #f0f0f0; 
+    padding: 1em; 
+    margin: auto; 
+    width: 100%; 
+    border-radius: 10px;
+    } 
+
+    h1 {
+       text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    }
+
+.app-body {
+    background: url("back3.png");
+    color: #333;
+    margin: 33px;
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    background-repeat: repeat;
+    background-size:cover;
+    height: 100vh;
+    
+  } 
+  tbody {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+     flex-wrap: wrap;
+
+  }
+
+  tbody tr {
+    //   margin-bottom: 20px;
+      margin: 20px;
+  }
+
+  .card-img-top {
+    height: 300px;
+    width: auto;
+  }
+// .main-table {
+//     display: table; 
+    
+// }
+
+.new-draw{
+    // flex-grow: 1;
+    justify-content: center;  
+    text-align: center; 
+    padding: 5px;
+    transform: translate(300%, 40%); 
+    color: black;
+    font-size: 17px;
+    font-weight: bold; 
+    border: 15px solid #faebd7; 
+    border-radius: 5px; 
+    border-block-end-width: 10px;
+    background-color:  #faebd7; 
+    width: 200px;
+    opacity: 0.8; 
+    bottom: 50px;
+   
+} 
+.no-space {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2rem;
+  text-align: center; 
+ 
+} 
+
+.madeBy { 
+    font-size: 25px; 
+    font-variant: small-caps;  
+    
+} 
+
+#content-wrap {
+  padding-bottom: 1.5rem;    /* Footer height */
+}
+
+  

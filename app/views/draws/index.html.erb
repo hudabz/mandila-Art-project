@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MandelaArt</title>
+    </head> 
+
+ <body >
+<h1>Draws</h1> 
+
+<table> 
+  
+<tbody >
+    <% @draws.each do |draw| %>
+<tr> 
+  <td>
+
+ <div class="card" style="width: 18rem;"> 
+  <% if draw.image.attached? %>
+    <img src="<%=(url_for(draw.image))%>" class="card-img-top" alt="...">
+  <% end %> 
+  <div class="card-body">
+    <h5 class="card-title">Tools</h5>
+    <p class="card-text"><%= draw.tools %></p>
+    <h5 class="card-title">Description</h5>
+    <p class="card-text"><%= draw.description %></p>
+    <%= link_to 'Show', draw %>
+    <%= link_to 'Edit', edit_draw_path(draw) %>
+    <%= link_to 'Destroy', draw, method: :delete, data: { confirm: 'Are you sure?' } %>
+  </div>
+</div>  
+    <% end %>
+    </td> 
+  </tr> 
+  </tbody>
+  <p class="new-draw"> <%= link_to 'New Draw', new_draw_path %> </p>
+</table>
+ 
+</body>
+</html>
