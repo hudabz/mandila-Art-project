@@ -1,21 +1,12 @@
-<center><p id="notice"><%= notice %></p>
-
-<%
-=begin%>
- <p>
-  <strong>Painting:</strong>
-  <%= @draw.painting %>
-</p> 
-<%
-=end%>
-
+<center>
+<p id="notice"><%= notice %></p>
 
 <div class="card" style="width: 18rem;"> 
   <% if @draw.image.attached? %>
     <img src="<%=(url_for(@draw.image))%>" class="card-img-top" alt="...">
   <% end %>
   <div class="card-body">
-    <h5 class="card-title">First Name</h5>
+    <h5 class="card-title">First Name</h5> 
     <p class="card-text"><%= @draw.artist.first_name %></p>
      <h5 class="card-title">Last Name</h5>
     <p class="card-text"><%= @draw.artist.last_name %></p>
@@ -23,14 +14,15 @@
     <p class="card-text"><%= @draw.artist.age %></p>
      <h5 class="card-title">Country</h5>
     <p class="card-text"><%= @draw.artist.country %></p>
-    <%= link_to 'Show', @draw %>
-    <%= link_to 'Edit', edit_draw_path(@draw) %>
+    <%= link_to 'Show', @draw %> |
+    <%= link_to 'Edit', edit_draw_path(@draw) %> |
     <%= link_to 'Destroy', @draw, method: :delete, data: { confirm: 'Are you sure?' } %>
   </div>
 </div>  
 
 
 <%= link_to 'Edit', edit_draw_path(@draw) %> |
-<%= link_to 'Back', draws_path %>
+<%= link_to 'Back', draws_path %> 
 
-</center>
+</center> 
+<br> 

@@ -4,16 +4,17 @@
 
 .head {
     position: relative;
-    background-color: #f0f0f0; 
+    background-color: #faebd7; 
     padding: 1em; 
     margin: auto; 
     width: 100%; 
-    border-radius: 10px;
+    border-radius: 10px; 
+    font-family: 'Times New Roman', Times, serif;
     } 
 
     h1 {
        text-align: center;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+       font-family: Georgia, 'Times New Roman', Times, serif;
     }
 
 .app-body {
@@ -44,6 +45,12 @@
   .card-img-top {
     height: 300px;
     width: auto;
+  }
+  .card {
+    border: 2px solid black;
+  }
+  .card-body {
+    border-top  : 2px solid black;
   }
 // .main-table {
 //     display: table; 
@@ -96,6 +103,7 @@ footer {
 
 #content-wrap {
   padding-bottom: 1.5rem;    /* Footer height */
-}
+} 
+
 
   

@@ -12,16 +12,24 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body class="app-body">
+  <body class="app-body"> 
   <div id="page-container">
-  <div id="content-wrap">
-<header class="head">
+  <div id="content-wrap"> 
+<header class="head"> 
    <% if artist_signed_in?%> 
      <h2> Welcome <%= current_artist.first_name%></h2>
-     <%= link_to  "Sign Out", destroy_artist_session_path, method: :delete%> 
-     <%= link_to  "Change Password", edit_artist_registration_path %>  
-     <%else %>
-      <%= link_to  "Sign Up", new_artist_registration_path %> 
+     <%
+=begin%>
+ <%if welcome_path? %>   
+<%
+=end%>
+     <%= link_to  "Hmoe Page", welcome_path %> | 
+
+     <%= link_to  "Change Password", edit_artist_registration_path %> |
+      <%= link_to  "Sign Out", destroy_artist_session_path, method: :delete%> 
+     
+     <%else %>  
+      <%= link_to  "Sign Up", new_artist_registration_path %>| 
       <%= link_to  "Sign In", new_artist_session_path %> 
       <%end%> 
       <div >
