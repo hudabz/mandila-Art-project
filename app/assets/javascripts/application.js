@@ -18,6 +18,6 @@
 //= require bootstrap
 //= require_tree . 
 
-   
-    
-    
+//    ('.toggle-heart').on(click, function(){
+//        alert('dd')
+//    });
