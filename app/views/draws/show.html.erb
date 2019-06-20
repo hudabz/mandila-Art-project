@@ -14,15 +14,15 @@
     <p class="card-text"><%= @draw.artist.age %></p>
      <h5 class="card-title">Country</h5>
     <p class="card-text"><%= @draw.artist.country %></p>
-    <%= link_to 'Show', @draw %> |
-    <%= link_to 'Edit', edit_draw_path(@draw) %> |
-    <%= link_to 'Destroy', @draw, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <%= link_to 'Show', @draw, class:"gray-color" %> |
+    <%= link_to 'Edit', edit_draw_path(@draw), class:"gray-color" %> |
+    <%= link_to 'Delete', @draw, method: :delete, data: { confirm: 'Are you sure?' }, class:"gray-color" %>
   </div>
 </div>  
 
 
-<%= link_to 'Edit', edit_draw_path(@draw) %> |
-<%= link_to 'Back', draws_path %> 
+<%= link_to 'Edit', edit_draw_path(@draw), class:"white-color" %> |
+<%= link_to 'Back', draws_path, class:"white-color" %> 
 
 </center> 
 <br> 

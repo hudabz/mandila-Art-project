@@ -3,9 +3,9 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .head {
-    position: relative;
-    background-color: #faebd7; 
-    padding: 1em; 
+    // position: relative;
+    // background-color:gray; 
+    // padding: 1em; 
     margin: auto; 
     width: 100%; 
     border-radius: 10px; 
@@ -18,17 +18,17 @@
     }
 
 .app-body {
-    background: image-url("back3.png");
-    color: #333;
+    background: image-url("back6.jpg");
+    color: white;
     margin: 33px;
     font-family: verdana, arial, helvetica, sans-serif;
     font-size: 13px;
     line-height: 18px;
     background-repeat: repeat;
     background-size:cover;
-    height: 100vh;
-    
+    height: 100vh; 
   } 
+
   tbody {
     display: flex; 
     flex-direction: row;
@@ -44,35 +44,46 @@
 
   .card-img-top {
     height: 300px;
-    width: auto;
+    width: auto; 
+    border-radius: 20px;
   }
+  .white-color{
+    color:white;
+  }
+  .white-color:hover{
+    color: pink; 
+  } 
+
+  .gray-color{
+    color:gray;
+  }
+  .gray-color:hover{
+    color: #C71585; 
+  } 
+  
   .card {
-    border: 2px solid black;
-  }
-  .card-body {
-    border-top  : 2px solid black;
-  }
-// .main-table {
-//     display: table; 
-    
-// }
+    color: black;
+    border-radius: 20px;
+    opacity: 0.8;
+    background-color: #FFFAFA;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  } 
 
 .new-draw{
     // flex-grow: 1;
     justify-content: center;  
     text-align: center; 
-    padding: 5px;
     transform: translate(300%, 40%); 
-    color: black;
     font-size: 17px;
     font-weight: bold; 
-    border: 15px solid #faebd7; 
+    // border: 7px solid pink; 
     border-radius: 5px; 
-    border-block-end-width: 10px;
-    background-color:  #faebd7; 
+    // border-block-end-width: 10px;
+    background: image-url("back4.jpg");
     width: 200px;
-    opacity: 0.8; 
-    bottom: 50px;
+    // opacity: 0.8; 
+    // bottom: 50px;
+    padding: 10px;
    
 } 
 .no-space {
@@ -105,5 +116,27 @@ footer {
   padding-bottom: 1.5rem;    /* Footer height */
 } 
 
+[id='toggle-heart'] {
+  position: absolute;
+  left: -100vw;
+} 
 
-  
+[for='toggle-heart'] {
+  color: #aab8c2;
+}
+
+[id='toggle-heart']:checked + label {
+  color: #e2264d;
+}
+
+[for='toggle-heart'] {
+  font-size: 2em;
+  cursor: pointer;
+}
+
+@keyframes heart { 0%, 17.5% { font-size: 0; } }
+
+[id='toggle-heart']:checked + label {
+  will-change: font-size;
+  animation: heart 1s cubic-bezier(.17, .89, .32, 1.49);
+}
